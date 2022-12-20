@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color:red;
+    --transition:1s;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+.navbar{
+    background-color: transparent;
+    padding: 20px 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9;
+}
+.navbar  i{
+    color: var(--main-color);
+    font-size: 30px;
+    margin-right: 20%;
+    font-size: 40px;
+    animation: logo 1s infinite alternate;
+
+}
+
+@keyframes logo {
+    0% {
+        color: white;
+        
+    }
+    
+    100%{
+        color: var(--main-color);
+        
+    }
+}
+
+.navbar .list {
+    display: inline;
+    
+}
+
+.navbar .list a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5%;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.navbar .list button {
+    background-color: blanchedalmond;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: bold;
+}
+.navbar .list button:hover{
+    color: white;
+    background-color: var(--main-color);
+}
+
+.navbar .list a:hover{
+    letter-spacing: 2px;
+    color: var(--main-color);
+}
+
+.header {
+    background-image: url(./javier-martinez-hUD0PUczwJQ-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    position: relative;
+}
+
+.shadow {
+   /* position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;*/
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+   opacity: .8;
+}
+
+.play{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    font-size: 100px;
+    color: black;
+    transform: translate(50%,-50%);
+    cursor: pointer;
+    animation: logo 2s infinite alternate;
+    
+}
+
+
+
+.play i:hover {
+    transition: var(--transition);
+    color: var(--main-color);
+    transform: rotate(180deg);
+    
+}
+
